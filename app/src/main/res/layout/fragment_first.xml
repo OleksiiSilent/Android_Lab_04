@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
@@ -7,41 +8,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        style="?android:attr/buttonBarStyle">
-
-        <Button
-            style="?android:attr/button"
-            android:id="@+id/button_first_previous"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/previous_first"/>
-
-        <Button
-            style="?android:attr/button"
-            android:id="@+id/button_first_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/next_first"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textview_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_third"/>
-    </LinearLayout>
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/textName"
+            tools:ignore="TextSizeCheck" />
 
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Введить ім'я" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,29 +31,71 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="100dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
-            android:text="@string/textAdd" />
+            android:text="@string/textType"
+            tools:ignore="TextSizeCheck" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInput"
+        <EditText
+            android:id="@+id/typeInput"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:hint="@string/hintEnter" />
+            android:hint="Введить тип" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/textSize"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/sizeInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Введить розмір"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/textMaterial"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/matInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Введить матеріал" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:gravity="end">
+
         <Button
             android:id="@+id/button_push_to_list"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="16dp"
-            android:text="@string/btn_push"/>
+            android:text="@string/btn_push" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -81,9 +105,9 @@
             android:id="@+id/list_item"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1">
 
         </ListView>
     </LinearLayout>
-
 </LinearLayout>
+

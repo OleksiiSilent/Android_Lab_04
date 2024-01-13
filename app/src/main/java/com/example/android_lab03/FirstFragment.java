@@ -16,27 +16,13 @@ public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
 
-
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         return binding.getRoot();
-    }
-
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        binding.buttonFirstNext.setOnClickListener(view1 -> NavHostFragment
-                .findNavController(FirstFragment.this)
-                .navigate(R.id.action_FirstFragment_to_SecondFragment));
-
-        binding.buttonFirstPrevious.setOnClickListener(view2 -> NavHostFragment
-                .findNavController(FirstFragment.this)
-                .navigate(R.id.action_FirstFragment_to_ThirdFragment));
     }
 
     @Override
