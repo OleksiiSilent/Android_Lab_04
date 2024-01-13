@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab_03</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Перший фрагмент</string>
+    <string name="second_fragment_label">Другий фрагмент</string>
+    <string name="third_fragment_label">Третий фрагмент</string>
+    <string name="next_first">На другу</string>
+    <string name="next_second">На третю</string>
+    <string name="next_third">На першу</string>
+    <string name="previous_first">На третю</string>
+    <string name="previous_second">На першу</string>
+    <string name="previous_third">На другу</string>
+    <string name="text_first">Привіт з першого фрагменту</string>
+    <string name="text_second">Привіт з другого фрагменту</string>
+    <string name="text_third">Привіт з третього фрагменту</string>
+    <string name="textAdd">Введить ваше значення</string>
+    <string name="hintEnter">Будь яке значення...</string>
+    <string name="btn_push">Додати</string>
+</resources>
